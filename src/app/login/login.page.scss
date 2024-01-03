@@ -1,0 +1,171 @@
+ion-grid.header {
+    margin: 0 20px;
+    margin-top: 15px;
+}
+
+ion-grid.header ion-row {
+    height: 40px;
+}
+
+.back-icon {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.back-icon ion-icon {
+    padding: 4px;
+    border-radius: 8px;
+    background-color: rgb(240, 240, 240);
+}
+
+.back-icon ion-icon:hover {
+    background-color: rgb(222, 222, 222);
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.singin-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+    margin-bottom: 15px;
+}
+
+.form-container {
+    margin: 0 20px;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.fields .email-field, .fields .password-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.fields input {
+    border-radius: 5px;
+    padding: 8px;
+    margin: 5px 0;
+    margin-left: 5px;
+    flex: 1;
+}
+
+.fields input:focus {
+    outline: none;
+}
+
+.fields ion-icon {
+    font-size: 20px;
+    margin-left: 10px;
+    color: rgb(128, 128, 128);
+}
+
+.forgot-password {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.forgot-password a:hover {
+    color: #2e6cd7;
+}
+
+.signin-button {
+    margin-bottom: 25px;
+}
+
+.signin-button button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #4277EB;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.signin-button button:hover {
+    background-color: #2a68ee;
+}
+
+.separator {
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+
+.separator ion-row {
+    display: flex;
+    align-items: center;
+    color: rgb(128, 128, 128);
+}
+
+.separator-text {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.line {
+    height: 1px;
+    width: 20px;
+    background-color: rgb(207, 207, 207);
+}
+
+.social-logins {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    margin-bottom: 20px;
+}
+
+.social-logins button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid rgb(207, 207, 207);
+    background-color: #ffffff;
+}
+
+.social-logins button:hover {
+    background-color: #f2f2f2;
+}
+
+.social-logins button ion-icon {
+    margin-right: 8px;
+    font-size: 24px;
+}
+
+.create-account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.create-account a:hover {
+    color: #2e6cd7;
+}

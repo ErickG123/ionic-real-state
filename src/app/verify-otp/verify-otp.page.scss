@@ -1,0 +1,75 @@
+.container {
+    margin: 20px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.otp-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.otp-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(128, 128, 128);
+    margin-bottom: 20px;
+}
+
+.otp-fields {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.otp-fields input {
+    padding: 20px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 10px;
+}
+
+.otp-fields input:focus {
+    outline: none;
+}
+
+.resend-code {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #3880ff;
+}
+
+.otp-button {
+    margin-top: 20px;
+}
+
+.otp-button button {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #4277EB;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.otp-button button:hover {
+    background-color: #2a68ee;
+}

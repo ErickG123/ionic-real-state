@@ -1,59 +1,61 @@
 <ion-content [fullscreen]="true">
-  <ion-grid class="header">
-    <ion-row>
-      <ion-col class="back-icon">
-        <ion-icon name="chevron-back-outline"></ion-icon>
-      </ion-col>
-      <ion-col class="image">
-        <ion-img src="../../assets/icon/favicon.png" style="width: 30px;"></ion-img>
-      </ion-col>
-      <ion-col></ion-col>
-    </ion-row>
-  </ion-grid>
+  <div class="container">
+    <ion-grid class="header">
+      <ion-row>
+        <ion-col class="back-icon">
+          <a href="/lets-start"><ion-icon name="chevron-back-outline"></ion-icon></a>
+        </ion-col>
+        <ion-col class="image">
+          <ion-img src="../../assets/icon/favicon.png" style="width: 30px;"></ion-img>
+        </ion-col>
+        <ion-col></ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <div class="singin-header">
+      <p>Sign In</p>
+    </div>
   
-  <div class="singin-header">
-    <p>Sign In</p>
-  </div>
-
-  <div class="form-container">
-    <div class="fields">
-      <div class="email-field">
-        <ion-icon name="mail-outline"></ion-icon>
-        <input type="text" name="email" placeholder="Email">
+    <div class="form-container">
+      <div class="fields">
+        <div class="email-field">
+          <ion-icon name="mail-outline"></ion-icon>
+          <input type="text" name="email" placeholder="Email">
+        </div>
+        <div class="password-field">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+          <input type="password" name="password" placeholder="Password">
+        </div>
       </div>
-      <div class="password-field">
-        <ion-icon name="lock-closed-outline"></ion-icon>
-        <input type="password" name="password" placeholder="Password">
+      <div class="forgot-password">
+        <a href="/forgot-password">Forgot Password</a>
+      </div>
+      <div class="signin-button">
+        <button>Sign In</button>
       </div>
     </div>
-    <div class="forgot-password">
-      <a href="/forgot-password">Forgot Password</a>
+  
+    <ion-grid class="separator">
+      <ion-row>
+        <ion-col class="line"></ion-col>
+        <ion-col class="separator-text">or continue with</ion-col>
+        <ion-col class="line"></ion-col>
+      </ion-row>
+    </ion-grid>
+  
+    <div class="social-logins">
+      <button>
+        <ion-icon name="logo-facebook"></ion-icon>
+        Sign in with Facebook
+      </button>
+      <button>
+        <ion-icon name="logo-google"></ion-icon>
+        Sign in with Google
+      </button>
     </div>
-    <div class="signin-button">
-      <button>Sign In</button>
+  
+    <div class="create-account">
+      <span>Don't have an account? <a href="/create-account">Sign Up</a></span>
     </div>
-  </div>
-
-  <ion-grid class="separator">
-    <ion-row>
-      <ion-col class="line"></ion-col>
-      <ion-col class="separator-text">or continue with</ion-col>
-      <ion-col class="line"></ion-col>
-    </ion-row>
-  </ion-grid>
-
-  <div class="social-logins">
-    <button>
-      <ion-icon name="logo-facebook"></ion-icon>
-      Sign in with Facebook
-    </button>
-    <button>
-      <ion-icon name="logo-google"></ion-icon>
-      Sign in with Google
-    </button>
-  </div>
-
-  <div class="create-account">
-    <span>Don't have an account? <a href="/create-account">Sign Up</a></span>
   </div>
 </ion-content>

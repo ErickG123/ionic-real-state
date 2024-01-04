@@ -1,10 +1,17 @@
+.container {
+    margin: 20px;
+}
+
 ion-grid.header {
-    margin: 0 20px;
     margin-top: 15px;
 }
 
 ion-grid.header ion-row {
     height: 40px;
+}
+
+ion-grid.header a {
+    color: black;
 }
 
 .back-icon {
@@ -32,12 +39,8 @@ ion-grid.header ion-row {
 .singin-header {
     font-size: 24px;
     font-weight: bold;
-    margin: 20px;
+    margin-top: 20px;
     margin-bottom: 15px;
-}
-
-.form-container {
-    margin: 0 20px;
 }
 
 .fields {
@@ -104,7 +107,6 @@ ion-grid.header ion-row {
 }
 
 .separator {
-    margin: 0 20px;
     margin-bottom: 20px;
 }
 
@@ -132,7 +134,6 @@ ion-grid.header ion-row {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 20px;
     margin-bottom: 20px;
 }
 

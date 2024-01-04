@@ -1,20 +1,80 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="container">
+    <ion-header class="options">
+      <ion-grid>
+        <ion-row>
+          <ion-col class="filter">
+            <ion-icon name="grid"></ion-icon>
+          </ion-col>
+          <ion-col></ion-col>
+          <ion-col class="others">
+            <ion-icon name="search-outline"></ion-icon>
+            <ion-icon name="notifications-outline"></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="categories-container">
+      <ion-text>
+        <p>Categories</p>
+      </ion-text>
+      <div class="categories-options">
+        <div class="categorie selected">
+          <ion-icon name="trending-up-outline"></ion-icon>
+          <span class="selected">All</span>
+        </div>
+        <div class="categorie">
+          <ion-icon name="home-outline"></ion-icon>
+          <span>House</span>
+        </div>
+        <div class="categorie">
+          <ion-icon name="business-outline"></ion-icon>
+          <span>Apartment</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="house-container" *ngFor="let house of houses; let i = index" (click)="goToDetails(house.id)">
+      <ion-card>
+        <div class="image-container">
+          <button (click)="toggleBookmark(i)" class="favorite-icon">
+            <ion-icon [name]="house.isBookmarked ? 'bookmark' : 'bookmark-outline'"></ion-icon>
+          </button>
+          
+          <img alt="House" src="../../assets/images/base-house-{{ i + 1 }}.jpg" />
+        </div>
+        
+        <div class="house-header">
+          <p class="house-name">{{ house.name }}</p>
+          <p class="house-price">{{ house.price }}</p>
+        </div>
+
+        <div class="house-rate">
+          <div class="rate">
+            <ion-icon name="star"></ion-icon>
+            <p class="rate-number">{{ house.stars }} <span class="total-views">({{ house.totalViews}} Reviews)</span></p>
+          </div>
+          <div class="month">
+            <p>/ month</p>
+          </div>
+        </div>
+
+        <div class="house-infos">
+          <div class="info">
+            <ion-icon name="location-outline"></ion-icon>
+            <p>{{ house.locale }}</p>
+          </div>
+          <div class="info">
+            <ion-icon name="bed-outline"></ion-icon>
+            <p>{{ house.totalBeds }} Beds</p>
+          </div>
+          <div class="info">
+            <ion-icon name="water-outline"></ion-icon>
+            <p>{{ house.totalBaths}} Baths</p>
+          </div>
+        </div>
+      </ion-card>
+    </div>
   </div>
 </ion-content>

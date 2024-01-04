@@ -1,0 +1,50 @@
+.container {
+    margin: 20px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    text-align: start;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.start-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-align: start;
+    color: rgb(128, 128, 128);
+    margin-bottom: 20px;
+}
+
+.start-button {
+    display: flex;
+    flex: 1;
+    margin-top: 20px;
+}
+
+.start-button a {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #4277EB;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.start-button a:hover {
+    background-color: #2a68ee;
+}
